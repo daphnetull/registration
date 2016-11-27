@@ -1,0 +1,249 @@
+/************
+BASE STYLES
+************/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    color: #495D70;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.headings-colors {
+    color: #3B4650;
+}
+
+.font-adjust {
+    font-size: 1.25em;
+}
+
+/***********
+HEADER RULES
+***********/
+
+header {
+    text-align: center;
+    background-color: #2D3945;
+}
+
+.main-title {
+    text-transform: uppercase;
+    color: #F1F2F3;
+    margin-top: 0;  
+    padding: 2em 0;  
+}
+
+.header-sub {
+    text-align: center;
+    border-bottom: solid thick #2D3945;
+}
+
+.h3-font-adjust {
+    font-size: 1.7em;
+}
+
+
+
+/***********
+FORM RULES
+***********/
+
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding: 2em 0 1em 0;
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+
+.contact-form {
+    margin-top: .3em;
+    border-top: solid .2em #2D3945;
+}
+
+.form-upper {
+    padding-bottom: 2em;
+    border-bottom: solid .2em #2D3945;
+}
+
+input[required]::-webkit-input-placeholder {
+    color: gray;
+    font-style: italic;
+    text-align: right;
+
+}
+
+input:focus {
+    outline-color: #46698B;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    background-color: #EFF0F1;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border-radius: .3em;
+}
+
+textarea {
+    height: 8em;
+    resize: none;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin: .6em 0;
+    color: #6E7D8D;
+}
+
+.styled-select select {
+    background: url(select-arrows.png) no-repeat right #ddd;
+    background-color: #EFF0F1;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+   -webkit-appearance: none;
+}
+.styled-select {
+   overflow: hidden;
+   background: url(select-arrows.png) no-repeat right #ddd;
+}
+
+
+label.select {
+    display: inline;
+}
+
+input[type=checkbox].css-checkbox {
+    position:absolute; 
+    z-index:-1000; 
+    left:-1000px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0; 
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:25px;
+    height:20px; 
+    display:inline-block;
+    line-height:20px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -20px;
+}
+
+label.css-label {
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_0310ad873f734efcaddecfbdb8c33631.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=radio].css-radio {
+    position:absolute; 
+    z-index:-1000; 
+    left:-1000px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0; 
+    border:0;
+}
+
+input[type=radio].css-radio + label.css-label-radio {
+    padding-left:23px;
+    height:18px; 
+    display:inline-block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=radio].css-radio:checked + label.css-label-radio {
+    background-position: 0 -18px;
+}
+
+label.css-label-radio {
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_4f8842d76bf5132e62877be82a8e9673.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+label.label-margin-adjust {
+    margin-top: 1.3em;
+}
+
+
+/************
+BUTTON STYLES
+************/
+
+button {
+    width: 100%;    
+    border: 0;
+    padding: 0; 
+    margin-top: 1.5em;
+    background-color: #4EBBB5;
+    color: white;
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    border-radius: .3em;
+}
+
+/************
+FOOTER STYLES
+************/
+
+footer p {
+ 
+    font-style: italic;
+    text-align: center;
+    font-size: .9em;
+    color: #9DA3A8;
+    
+    
+    
+}
