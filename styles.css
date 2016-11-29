@@ -119,15 +119,12 @@ label {
 .styled-select select {
     background: url(select-arrows.png) no-repeat right #ddd;
     background-color: #EFF0F1;
-    font-size: 16px;
-    line-height: 1;
     border: 0;
-    border-radius: 0;
-   -webkit-appearance: none;
+    -webkit-appearance: none;
+    
 }
 .styled-select {
-   overflow: hidden;
-   background: url(select-arrows.png) no-repeat right #ddd;
+    border-radius: .3em;
 }
 
 
@@ -233,6 +230,11 @@ button {
     border-radius: .3em;
 }
 
+button:hover {
+    transition: .5s;
+    background-color: #4fa0ba; 
+}
+
 /************
 FOOTER STYLES
 ************/
@@ -243,7 +245,48 @@ footer p {
     text-align: center;
     font-size: .9em;
     color: #9DA3A8;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+
+
+@media only screen and (min-width: 760px) {
     
+    div.container {
+        width: 50%;
+    }
+    
+    fieldset {
+        padding-left:0;
+        padding-right: 0;    
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    fieldset.form-upper label {
+        margin-top: 1em;
+    }
+    
+    
+    fieldset.form-upper label,
+    fieldset.form-upper input,
+    fieldset.form-upper .styled-select,
+    fieldset.form-upper select {
+        display: inline-block;
+    }
+    
+    fieldset.form-upper label {
+        width: 38%;
+    }
+    
+    fieldset.form-upper input ,
+    fieldset.form-upper .styled-select {
+        width: 60.74%;
+    }
     
     
 }
+
+
