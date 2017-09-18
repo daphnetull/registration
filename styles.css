@@ -87,7 +87,8 @@ input[required]::-webkit-input-placeholder {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
     outline-color: #46698B;
 }
 
