@@ -169,7 +169,7 @@ label.css-label {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    /* user-select: none; */
 }
 
 input[type=radio].css-radio {
@@ -207,7 +207,7 @@ label.css-label-radio {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    /* user-select: none; */ 
 }
 
 label.label-margin-adjust {
